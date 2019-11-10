@@ -41,6 +41,7 @@ var quotes = [
  * `getRandomQuote` function
 ***/
 var quoteVar;
+var message = " ";
 
 
 //A little help from "Kelly" (https://stackoverflow.com/questions/5915096/get-random-item-from-javascript-array). Almost had it, but her example cleaned up my syntax on the Math.random part.
@@ -61,13 +62,13 @@ function getRandomQuote() {
 function printQuote() {
     for (var i = 0; i < quotes.length; i++) {
         quoteVar = getRandomQuote();
-        var message = getElementsByClassName("quote");
+        message = document.getElementById("quote-box").innerHTML;
         message += "<p class='quote'>" + quoteVar.quote + "</p>";
         message += "<p class ='source'>" + quoteVar.source + "<span class='citation'>" + quoteVar.citation + "</span>" + "<span class='year'>" + quoteVar.year + "</span>" + "</p>";
         return message;
     }
 }
-console.log(printQuote());
+;
 
 //^ the function works as a console.log, how to get it on the page?
 
