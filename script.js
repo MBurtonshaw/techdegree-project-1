@@ -51,11 +51,9 @@ function getRandomQuote() {
 /***
  * `printQuote` function
 ***/
-/*
-<p class="quote">quotes.quote</p>;
-        <p class="source">quotes.source<span class="citation">quotes.citation</span><span class="year">quotes.year</span></p>;
-*/
-//printQuote loops through the quote object's properties and returns a random quote.
+
+//printQuote loops through the quote object's properties and returns a random quote in a specific HTML format.
+
 function printQuote() {
     for (var i = 0; i < quotes.length; i++) {
         let  quoteVar = getRandomQuote();
