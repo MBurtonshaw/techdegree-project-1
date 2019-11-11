@@ -63,13 +63,14 @@ function printQuote() {
     for (var i = 0; i < quotes.length; i++) {
         quoteVar = getRandomQuote();
         let quoteBox = document.getElementById("quote-box");
-        quoteBox.innerHTML = message;
+        quoteBox.innerHTML = <p class="quote">quotes.quote</p>;
+        <p class="source">quotes.source<span class="citation">quotes.citation</span><span class="year">quotes.year</span></p>;
     }
 }
 
 //^ the function works as a console.log, how to get it on the page?
 
-printQuote();
+console.log(printQuote());
         
 
 /***
