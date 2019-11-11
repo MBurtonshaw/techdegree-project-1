@@ -63,20 +63,18 @@ function printQuote() {
     for (var i = 0; i < quotes.length; i++) {
         quoteVar = getRandomQuote();
         message = document.getElementById("quote-box").innerHTML;
-        message += "<p class='quote'>" + quoteVar.quote + "</p>";
-        message += "<p class ='source'>" + quoteVar.source + "<span class='citation'>" + quoteVar.citation + "</span>" + "<span class='year'>" + quoteVar.year + "</span>" + "</p>";
         return message;
     }
 }
-;
 
 //^ the function works as a console.log, how to get it on the page?
 
-function convertText() {
-  getElementByID("quote-box").innerHTML = printQuote();
+function convertText(anyMessage) {
+  var quoteBox = getElementById("quote-box");
+    quoteBox.innerHTML = message;
 }
 
-convertText();
+convertText(printQuote);
         
 
 /***
