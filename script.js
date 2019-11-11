@@ -58,9 +58,9 @@ function getRandomQuote() {
 //printQuote loops through the quote object's properties and returns a random quote.
 function printQuote() {
     for (var i = 0; i < quotes.length; i++) {
-        let quoteVar = getRandomQuote();
+        let  quoteVar = getRandomQuote();
         let quoteBox = document.getElementById("quote-box");
-        quoteBox.innerHTML = quoteVar;
+        quoteBox.innerHTML = quoteVar.quote + quoteVar.source + quoteVar.citation + quoteVar.year;
     }
 }
 
