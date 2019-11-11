@@ -62,19 +62,14 @@ function getRandomQuote() {
 function printQuote() {
     for (var i = 0; i < quotes.length; i++) {
         quoteVar = getRandomQuote();
-        message = document.getElementById("quote-box").innerHTML;
-        return message;
+        let quoteBox = document.getElementById("quote-box");
+        quoteBox.innerHTML = message;
     }
 }
 
 //^ the function works as a console.log, how to get it on the page?
 
-function convertText(anyMessage) {
-    let quoteBox = document.getElementById("quote-box");
-    quoteBox.innerHTML = anyMessage;
-}
-
-convertText(printQuote());
+printQuote();
         
 
 /***
