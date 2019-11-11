@@ -72,6 +72,13 @@ function printQuote() {
 
 //^ the function works as a console.log, how to get it on the page?
 
+function convertText() {
+  getElementByID("quote-box").innerHTML = printQuote();
+}
+
+convertText();
+        
+
 /***
  * click event listener for the print quote button
  * DO NOT CHANGE THE OF CODE BELOW!!
