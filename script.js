@@ -70,11 +70,11 @@ function printQuote() {
 //^ the function works as a console.log, how to get it on the page?
 
 function convertText(anyMessage) {
-  var quoteBox = getElementById("quote-box");
-    quoteBox.innerHTML = message;
+    let quoteBox = document.getElementById("quote-box");
+    quoteBox.innerHTML = anyMessage;
 }
 
-convertText(printQuote);
+convertText(printQuote());
         
 
 /***
